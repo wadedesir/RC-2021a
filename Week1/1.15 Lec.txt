@@ -1,0 +1,26 @@
+Create reddit Account
+sub to hackernews
+
+Create StackOverflow Account
+
+HOMEWORK:
+Build-
+About Me Page to compliment your resume (HTML)
+Read-
+https://learn.shayhowe.com (not advanced)
+http://learnlayout.com/
+Watch-
+https://youtu.be/RZUDEaLa5Nw
+Do-
+Create a Stack Overflow Account (http://stackoverflow.com/) *Read through topics of interest / help as able and ask for help as needed.
+Create a Reddit Account (http://www.reddit.com/)
+Subscribe to: /r/programming, /r/learnprogramming, /r/frontend, /r/webdev, /r/javascript, /r/learnjavascript, ect. Read through daily or as often as possible. Get lost in links of interest, keep good bookmarks, and contribute to threads when possible.
+Create a Hacker News Account (https://news.ycombinator.com/) *Read through daily. Contribute when possible
+Create a Codepen Account (http://codepen.io/) *Post any interesting html/css/js tricks here
+Create a JSbin Account (http://jsbin.com/) *When asking for help try to recreate the problem here and then share the link with individuals who may be able to help. (Has a leg up on JSfiddle b/c it includes a console).
+Listen to: http://shoptalkshow.com/ (FEWD podcast - great for staying on top of trends)
+Hangout here: ##javascript on irc.freenode.org (You will need an IRC client). http://frontenddevelopers.org/ slack channel
+Sneak Peak of things that will be assigned next week:
+https://youtu.be/UB1O30fR-EE
+https://youtu.be/yfoY53QXEnI
+Numbers: 1,2, & 11-15 (7 total). Although, I recommend watching them all at some point: https://www.youtube.com/playlist?list=PL7BImOT2srcGCCjBBwNvU5zaB9F30lWye
