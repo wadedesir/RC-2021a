@@ -46,7 +46,9 @@ table {
   border-spacing: 0;
 }
 
-
+body{
+  padding: 50px;
+}
 h1 > a{
   color: rgba(235, 84, 83, 1);
   text-decoration: none;
@@ -103,13 +105,16 @@ article p::first-letter{
   color: rgba(35, 35, 5, 0.3);
 }
 
-article > h4 > a{
+h4{
+  margin-top: 10px;
+  text-align: right;
+}
+
+h4 > a{
   color: rgba(235, 84, 83, 1);
   font-family: Lato, sans-serif;
   font-weight: 700px;
   font-size: 20px;
-  margin-top: 10px;
-  text-align: right;
 }
 
 article #paris{
