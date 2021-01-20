@@ -15,7 +15,7 @@ section > div{
   width: 33.333%;
 }
 
-section .row2{
+.row2 div{
   margin: auto;
-  background-color: blue;
+  width: 50%;
 }
