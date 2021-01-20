@@ -3,33 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>BBC - Homepage</title> <!-- Sets Website Title -->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-    <nav> <!-- Top navigation bar, # stand in for links, Form "name" only there for stand in. -->
-      <a id="logo" href="#"><img src="#" alt="Logo"></a>
-      |
-      <a id="logIn" href="#">Sign In</a>
-      |
-      <a href="#">News</a>
-      |
-      <a href="#">Sport</a>
-      |
-      <a href="#">Weather</a>
-      |
-      <a href="#">Shop</a>
-      |
-      <a href="#">Earth</a>
-      |
-      <a href="#">Travel</a>
-      |
-      <a href="#">Capital</a>
-      |
-      <a href="#">Culture</a>
-      |
-      <a href="#">More</a>
-      |
+    <nav>
+      <ul> <!-- Top navigation bar, # stand in for links, Form "name" only there for stand in. -->
+        <li><a id="logo" href="#"><img src="#" alt="Logo"></a></li>
+        <li><a id="logIn" href="#">Sign In</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Sport</a></li>
+        <li><a href="#">Weather</a>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Earth</a></li>
+        <li><a href="#">Travel</a></li>
+        <li><a href="#">Capital</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a id="more" href="#">More</a></li>
+      </ul>
     </nav>
     <form class="srch" action="bbc.html" method="post">
       <input type="text" name="Search" value="Search"> <!-- "Search" should be empty but is there for a placeholder" -->
