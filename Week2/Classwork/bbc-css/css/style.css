@@ -1,0 +1,224 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+  border: 1px solid black;
+  height: 35px;
+  background: black;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav ul li a{
+  display: block;
+  text-align: center;
+  float: left;
+  height: 35px;
+  color: white;
+  border-left: 1px solid white;
+  padding: 5px;
+  width: 5%;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+#logo{
+  border-left: none;
+  margin-left: 20px;
+  width: 8%;
+}
+#logIn{
+  text-align: left;
+  width: 10%;
+}
+#more{
+  text-align: left;
+  border-right: 1px solid white;
+  width: 10%;
+}
+
+.srch{
+  float: left;
+  padding: 5px;
+}
+
+
+.top{
+  background-color: rgba(231, 232, 225, 1) ;
+  padding: 20px;
+}
+
+.top #welcome{
+  display: inline-block;
+  margin-left: 8px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+  clear: both;
+}
+
+.left,
+.right{
+  width: 49%;
+  display: inline-block;
+  vertical-align:top;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.left{
+  margin-left: 13px;
+}
+
+.innerBoxLeft,
+.innerBoxRight{
+  height: 350px;
+  border: 1px solid transparent;
+  width: 98%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(https://via.placeholder.com/250x170);
+}
+
+.headline{
+  color: white;
+}
+
+.innerBoxLeft section{
+  margin-left: 10px;
+  margin-top: 220px;
+}
+.innerBoxLeft h1 {
+  font-size: 35px;
+  display: block;
+}
+
+.innerBoxLeft p{
+  font-size: 14px;
+  display: block;
+}
+
+.innerBoxLeft span{
+  display: block;
+  margin-top: 10px;
+  color: white;
+  font-size: 15px;
+  border-left: 3px solid red;
+}
+
+.right h2{
+  display: inline-block;
+  margin-right: 8px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  font-weight: bold;
+  float: right;
+  clear: both;
+}
+
+.innerBoxRight section{
+  display: block;
+  height: 150px;
+  width: 46%;
+  margin: 10px;
+  margin-left: 15px;
+  margin-top: 13px;
+  float: left;
+  background-image: url(http://placekitten.com/150/67);
+}
+
+.innerBoxRight h3{
+  display: block;
+  margin-top: 80px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.innerBoxRight span{
+  display: block;
+  margin-top: 8px;
+  margin-left: 10px;
+  font-size: 13px;
+  color: white;
+  border-left: 2px solid skyblue;
+}
+
+.bottom{
+  padding: 20px;
+  height: 200px;
+}
+
+.bottom h2{
+  border-left: 5px solid red;
+  margin-left: 110px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.bottom > div{
+  display: inline-block;
+  margin-top: 10px;
+  height: 250px;
+  width: 30%;
+}
+.bottom div a{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

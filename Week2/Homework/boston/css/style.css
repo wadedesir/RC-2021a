@@ -1,0 +1,341 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: maroon;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+  display: block;
+  height: 55px;
+  background-color: black;
+}
+
+header li{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 38px;
+  margin-top: 12px;
+}
+header li:hover{
+  border-bottom: 5px solid maroon;
+  /* Ignore this im just having too much fun wtith the hover feature */
+}
+header a{
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+.logo{
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: auto;
+  height: 55px;
+}
+.logo a{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+}
+.logo i{
+  color: maroon;
+  font-size: 8px;
+}
+
+section{
+  display: inline-block;
+  /* border: 1px solid gold; */
+  margin-top: 80px;
+  width: auto%;
+}
+
+.mainContent{
+  display: inline-block;
+  margin-left: 150px;
+  height: 700px;
+  padding-top: 15px;
+  width: 50%;
+  border-bottom: 1px solid lightgray;
+}
+.mainContent section{
+  display: inline-block;
+  margin-top: 0;
+  width: 65%;
+  margin-left: 0;
+}
+.mainContent div{
+  display: inline-block;
+  /* border: 1px solid black; */
+  margin-left: 15px;
+}
+.mainHHeadline a{
+  font-size: 28px;
+  color: black;
+  font-weight: bold;
+}
+.subHeadline{
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin-top: 10px;
+  /* border: 1px solid gold; */
+}
+.subHeadline a{
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+.sideNews{
+  display: inline-block;
+  vertical-align: top;
+  /* border: 1px solid pink; */
+  height: 530px;
+  width: 30%;
+  margin-left: 20px;
+}
+.sideNews li{
+  display: block;
+  margin-bottom: 10px;
+  /* border: 1px solid black; */
+}
+.sideNews a{
+  font-size: 19px;
+  font-weight: bold;
+  color: rgba(197, 11, 48, 1);
+}
+.sideNews p{
+  font-size: 13px;
+}
+
+.top{
+  display: inline-block;
+  vertical-align: top;
+  width: 96%;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 17px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid rgba(197, 11, 48, 1);
+}
+.mainAside{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0;
+  /* border: 1px solid black; */
+  width: 446px;
+  height: 530px;
+}
+.mainAside section:first-of-type{
+  margin-bottom: 20px;
+  margin-left: 60px;
+  margin-top: 13px;
+  height: 250px;
+  width: 70%;
+  background-color: rgba(197, 11, 48, 1);
+}
+.mainAside div a{
+  display: inline-block;
+  width: 25%;
+  font-size: 50px;
+  margin-left: 15px;
+  margin-top: 10px;
+  border-radius: 26px;
+  color: rgba(197, 11, 48, 1);
+  background-color: white;
+  /* border: 1px solid red; */
+}
+.mainAside .boxRight{
+  display: inline-block;
+  vertical-align: top;
+  height: 40px;
+  width: 48%;
+  /* border: 1px solid black; */
+
+}
+.boxRight h3,
+.boxRight h4{
+  font-size: 14px;
+  font-weight: bold;
+}
+.boxRight h3{
+  margin-top: 20px;
+}
+.mainAside div{
+  display: block;
+  height: 100px;
+  width: 80%;
+  margin-left: 30px;
+  margin-top: 10px;
+  /* border: 1px solid black; */
+}
+.skiPic{
+  display: block;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+.ski{
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.mainAside .mostPopular{
+  display: block;
+  margin: auto;
+  /* border: 1px solid green; */
+}
+
+.mostPopular h2{
+  display: block;
+  border-bottom: 3px solid rgba(197, 11, 48, 1);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.mostPopular ol{
+  display: block;
+  margin-top: 5px;
+  /* border: 2px solid purple; */
+  list-style: decimal;
+  font-size: 16px;
+  font-weight: bold;
+}
+.mostPopular li{
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 12px;
+  margin-left: 20px;
+
+}
+.mostPopular a{
+  font-weight: normal;
+  font-size: 14px;
+  color: black;
+}
+
+.auto{
+  margin-top: 50px;
+  margin-left: 150px;
+}
+.auto div{
+  display: block;
+  /* border: 1px solid black; */
+  font-size: 35px;
+  font-weight: bold;
+}
+.auto h2{
+  display: inline-block;
+  border-right: 4px solid rgba(197, 11, 48, 1);
+  border-left: 4px solid rgba(197, 11, 48, 1);
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 5px;
+}
+.auto div a{
+  font-size: 19px;
+  font-weight: normal;
+  color: lightgray;
+  text-decoration: underline;
+}
+.auto section{
+  display: inline-block;
+  vertical-align: top;
+  width: 36%;
+  margin: 0;
+  /* border: 1px solid black; */
+}
+.auto section img{
+  display: block;
+}
+.auto section h2{
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+.auto h2 a{
+    color: black;
+}
+.auto section + section{
+  margin-left: 5px;
+  margin-top: 20px;
+  width: 60%;
+}
+.auto section + section a{
+  display: block;
+  height: 60px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid lightgray;
+  font-size: 27px;
+  color: black;
+}
+footer{
+  display: block;
+  border-top: 1px solid lightgray;
+}
+footer section{
+  float: left;
+}
+footer section a{
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+footer section + section a{
+  font-size: 15px;
+  color: skyblue;
+}
+footer section + section{
+  display: block;
+  float: right;
+}
+footer li{
+  display: inline-block;
+  border-left: 2px solid black;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

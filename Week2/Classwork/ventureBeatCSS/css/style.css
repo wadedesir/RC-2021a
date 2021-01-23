@@ -1,0 +1,156 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Roboto, Helvetica, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+a{
+  text-decoration: none;
+}
+nav{
+  background-color: black;
+}
+li {
+  display: inline-block;
+  height: 40px;
+  width: 8%;
+  float: left;
+  text-align: center;
+  padding-top: 8px;
+  margin-left: 30px;
+}
+.logo{
+  display: block;
+  margin-left: 170px;
+  margin-right: 190px;
+  padding-top: 0;
+}
+.logo a{
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+.logo a span{
+  color: red;
+  font-size: 33px;
+}
+.signUp{
+  margin-left: 200px;
+}
+li a{
+  color: lightgray;
+  font-size: 18px;
+  font-weight: 300;
+}
+.srch input{
+  display: block;
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+header nav{
+  display: block;
+  height: 45px;
+  border: 1px solid black;
+}
+header section{
+  display: block;
+  height: 470px;
+  border: 1px solid black;
+  background-color: rgba(52, 74, 67, 1);
+}
+
+h1{
+  display: block;
+  height: 80px;
+  width: 40%;
+  margin-top: 330px;
+  margin-left: 180px;
+  background-color: rgba(245, 243, 243, 0.8);
+}
+
+h1 a{
+  color: black;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.articles section{
+  display: block;
+  height: 180px;
+  width: 38%;
+  margin-top: 12px;
+  margin-left: 180px;
+  border-bottom: 1px solid lightgray;
+}
+
+section img{
+  display: block;
+  float: left;
+  height: 165px;
+  width: 40%;
+  margin-top: 2px;
+}
+
+section h2{
+  display: inline-block;
+  height: 100px;
+  width: 50%;
+  padding-left: 5px;
+}
+h2 a{
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+}
+section span{
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  width: 28%;
+  margin-top: 5px;
+  padding-left: 10px;
+  font-size: 13px;
+}

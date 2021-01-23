@@ -1,0 +1,240 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Montserrat, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.greenHeader{
+  height: 80px;
+  background-color: rgba(46, 112, 97, 1);
+
+}
+a{
+  text-decoration: none;
+}
+header div{
+  height: inherit;
+  vertical-align: top;
+  display: inline-block;
+  border-left: 1px solid white;
+  width: 20%;
+  margin-left: 5px;
+  text-align: center;
+  padding-top: 25px;
+}
+.headerleft{
+  padding-top: 15px;
+}
+span:first-of-type{
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba( 255, 255, 255, 0.6);
+}
+.us{
+  display: inline-block;
+  font-size: 25px;
+  color: white;
+}
+.headerleft{
+  display: inline-block;
+  border: none;
+}
+.headerleft span{
+  display: block;
+  height: 20px;
+}
+.pageTitle,
+.pageTitle a{
+  padding-top: 10px;
+  width: 58%;
+  color: white;
+  font-size: 40px;
+  letter-spacing: -4px;
+}
+
+.socials a{
+  display: inline-block;
+  height: 25px;
+  width: 20%;
+}
+.socials a i{
+  color: white;
+  font-size: 25px;
+}
+
+.headerNav{
+  display: block;
+  height:40px;
+  border-bottom: 1px solid lightgray;
+}
+
+/* Using the ".headerNav class here breaks everything
+I don't have enough time to fix it.
+If it aint broke ¯\_(ツ)_/¯" */
+nav li{
+  display: inline-block;
+  vertical-align: top;
+  height: 30px;
+  width: 8%;
+  margin-top: 9px;
+  margin-left: 18px;
+  text-align: center;
+}
+.headerNav li:hover{
+  border-bottom: 5px solid rgba(46, 112, 97, 1);
+}
+.first{
+  margin-left: 60px;
+  border-bottom: 5px solid rgba(46, 112, 97, 1);
+}
+.thicc{
+  width: 12%;
+}
+.headerNav a{
+  font-size: 16px;
+  font-weight: 900;
+  color: black;
+}
+.headerNav i{
+  font-size: 20px;
+  font-weight: 900;
+}
+h1{
+  display: block;
+  height: 180px;
+  text-align: center;
+}
+h1 strong{
+  display: block;
+  width: 55%;
+  margin: auto;
+  margin-top: 5px;
+
+  font-size: 60px;
+  font-weight: 900;
+  color: black;
+}
+
+.kitties{
+  display: block;
+  width: 50%;
+  margin-left: 470px;
+}
+
+.lowerNews1,
+.lowerNews2{
+  display: block;
+  height: 220px;
+  margin-top: 100px;
+}
+
+.lowerNews1 div,
+.lowerNews2 div{
+  display: inline-block;
+  vertical-align: top;
+  height: 220px;
+  width: 20%;
+  margin-left: 10px;
+  border-top: 4px solid rgba(46, 112, 97, 1);
+}
+
+.lowerNews1 .div1,
+.lowerNews2 .div2{
+  margin-left: 135px;
+}
+
+.lowerNews1 h3 a,
+.lowerNews2 h3 a{
+  display: block;
+  margin-top: 5px;
+  margin-left: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+.lowerNews1 img,
+.lowerNews2 img{
+ display: block;
+ margin-top: 5px;
+ margin-left: 6px;
+}
+
+footer{
+  display: block;
+  margin-top: 130px;
+  height: 100px;
+  background-color: black;
+}
+
+.footerNav1,
+.footerNav2{
+  border-bottom: none;
+}
+
+.footerNav1 a,
+.footerNav2 a{
+  font-size: 10px;
+  color: lightgray;
+  font-weight: normal;
+  margin: auto;
+}
+
+footer h3{
+  color: lightgray;
+  text-align: center;
+  width: auto;
+}
+
+.advertise{
+  margin-left: 550px;
+}
+.user{
+  margin-left: 270px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
