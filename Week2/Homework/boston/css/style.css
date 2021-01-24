@@ -70,6 +70,9 @@ header a{
   color: white;
   font-weight: bold;
 }
+.logo:hover{
+  border-bottom: none;
+}
 .logo{
   margin-left: 140px;
   margin-right: 140px;
