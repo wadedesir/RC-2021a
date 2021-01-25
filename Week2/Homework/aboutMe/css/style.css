@@ -40,13 +40,65 @@ body {
      font-size: 12px;
      line-height: 1.4;
      font-family: Helvetica, Arial, sans-serif;
+     background-color: rgba(240, 242, 245, 1);
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+header{
+  display: block;
+  height: 200px;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+header li{
+  display: inline-block;
+  width: 16%;
+  margin-left: 5px;
 
+  /* border: 1px solid black; */
+  font-size: 13px;
+
+}
+header strong{
+  font-weight: bold;
+    text-decoration: none;
+}
+header h1{
+  font-size: 60px;
+  text-align: center;
+  font-weight: lighter;
+}
+section{
+  display: inline-block;
+  vertical-align: top;
+  /* border: 1px solid black; */
+  text-align: center;
+  width: 75%;
+  margin-left: 185px;
+  font-size: 14px;
+
+  border-radius: 20px;
+  background-color: white;
+}
+section h2{
+  display: block;
+  font-size: 16px;
+  width: 50%;
+  margin-left: 300px;
+  padding-top: 20px;
+  font-weight: bold;
+  border-top: 1px solid gray;
+}
+
+img{
+  width: 200px;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 670px;
+}
 
 /******************************************
 /* ADDITIONAL STYLES

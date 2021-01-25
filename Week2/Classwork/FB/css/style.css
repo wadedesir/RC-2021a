@@ -1,0 +1,263 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background-color: rgba(240, 242, 245, 1);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+  display: block;
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+header i{
+  display: inline-block;
+  font-size: 40px;
+  margin-left: 25px;
+  color: gray;
+  /* border: 1px solid black; */
+}
+#fb{
+  color: rgba(15, 142, 242, 1);
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+#home{
+  margin: 0;
+  margin-left: 320px;
+  color: rgba(15, 142, 242, 1);
+}
+#user{
+  margin-left: 300px;
+}
+header input{
+  display: inline-block;
+  vertical-align: top;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 20px;
+
+}
+section{
+  display: inline-block;
+  /* border: 1px solid black; */
+}
+.content{
+  height: 700px;
+  width: 100%;
+}
+.items{
+  height: 700px;
+  width: 20%;
+}
+.items li{
+  display: block;
+  /* border: 1px solid black; */
+  font-size: 20px;
+  margin-bottom: 13px;
+}
+.items i{
+  color: rgba(67, 189, 216, 0.9);
+  font-size: 40px;
+}
+
+.centerContent{
+  vertical-align: top;
+  height: 700px;
+  width: 50%;
+  margin-left: 20px;
+}
+.centerContent section{
+  display: block;
+  width: 100%;
+}
+.centerContent section:first-of-type{
+  display: block;
+  padding: 20px;
+  width: 100%;
+}
+.centerContent section div{
+  display: inline-block;
+  height: 200px;
+  /* border: 1px solid black; */
+  width: 15%;
+  margin-left: 5px;
+  border-radius: 20px;
+  background-color: white;
+}
+.centerContent section div:first-of-type{
+  margin-left: 80px;
+  border-bottom: 1px solid lightgray;
+}
+#mid{
+  /* height: 150px; */
+  background-color: white;
+  border-radius: 15px;
+}
+#mid div{
+  display: block;
+  margin-left: 0;
+  height: 50px;
+  width: 100%;
+  border-radius: 0;
+  background-color: transparent;
+}
+#mid i{
+  display: inline-block;
+  /* border: 1px solid black; */
+  margin-left: 20px;
+  margin-top: 3px;
+  font-size: 40px;
+}
+#mid input{
+  height: 30px;
+  vertical-align: top;
+  margin-left: 8px;
+  margin-top: 10px;
+  width: 80%;
+  border-radius: 10px;
+}
+#mid span{
+  font-size: 15px;
+}
+#lwr span{
+  margin-left:65px;
+}
+.game{
+  margin-top: 15px;
+  height: 45px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+  font-size: 30px;
+}
+.game span{
+  font-size: 22px;
+  color: blue;
+  display: inline-block;
+  border-radius: 10px;
+  /* border: 1px solid lightblue; */
+}
+#btm{
+  margin-top: 15px;
+  height: 200px;
+}
+#btm div{
+  display: block;
+  height: 50px;
+  width: 100%;
+  border: none;
+  /* border-top: 1px solid black; */
+  margin-left: 0;
+}
+#btm i{
+  font-size: 40px;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+#btm span{
+  display: inline block;
+  font-size: 15px;
+  /* border: 1px solid black; */
+}
+#btm div:last-of-type{
+  height: 150px;
+  border-radius: 0px;
+  background-color: lightblue;
+}
+.rightContent{
+  vertical-align: top;
+  height: 700px;
+  width: 25%;
+  margin-left: 40px;
+}
+
+.rightContent div{
+  display: block;
+  height: 200px;
+  /* border: 1px solid black; */
+}
+.rightContent .birthdays{
+  height: 90px;
+}
+.rightContent span{
+  display: block;
+  color: gray;
+  font-weight: bold;
+  font-size: 14px;
+}
+.rightContent section{
+  display: block;
+  height: 170px;
+  /* border: 1px solid black; */
+}
+.birthdays section{
+  height: 90px;
+}
+.sponsored section{
+  height: 90px;
+}
+.rightContent p{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  margin-top: 33px;
+  font-weight: bold;
+}
+.rightContent .bd{
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 20px;
+  color: black;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

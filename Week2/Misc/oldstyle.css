@@ -1,0 +1,287 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Roboto, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Getting the fixxed footer out of the way */
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 25px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+footer span{
+  color: yellow;
+  text-decoration: underline;
+}
+
+/* Main Center Content */
+.outerSection{
+  display: inline-block;
+  vertical-align: top;
+  width: 74.5%;
+  /* border: 1px solid black; */
+}
+.outerSection section{
+  display: inline-block;
+  border: 1px solid lightgray;
+}
+.trumpHeader{
+  display: inline-block;
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 285px;
+  background-color: rgba(102, 0, 51, 1);
+}
+
+.trumpHeader section{
+  display: inline-block;
+  vertical-align: top;
+  /* border: 1px solid black; */
+  height: 285px;
+  width: 38%;
+}
+
+.trumpHeader h1 a{
+  display: block;
+  width: 80%;
+  height: 140px;
+  margin-left: 39px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 33px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+
+  /* border: 1px solid black; */
+}
+.trumpHeader p{
+  display: block;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  width: 55%;
+  margin-left: 88px;
+  color: lightyellow;
+  /* border: 1px solid black; */
+}
+.trumpHeader span{
+  display: block;
+  /* border: 1px solid black; */
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5px;
+  color: white;
+}
+
+.trumpHeader section:last-of-type{
+  float: right;
+}
+
+.transition{
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  margin-top: 14px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+.trumpHeader h3 a{
+  display: block;
+  text-align: left;
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 14px;
+  /* border: 1px solid black; */
+
+  color: white;
+  text-decoration: none;
+}
+.trumpHeader section{
+  border: none;
+}
+.lowerSection{
+  height: 350px;
+  width: 100%;
+  border: none;
+}
+
+.road{
+  vertical-align: top;
+  width: 20%;
+  height: 350px;
+}
+.road a{
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.rightSection{
+  display: inline-block;
+  float: right;
+  height: 350px;
+  width: 38%;
+  /* border: 1px solid black; */
+}
+.cons,
+.jeff{
+  display: block;
+  height: 144px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+.cons a,
+.jeff a{
+  font-size: 23px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.jeff{
+  margin-top: 60px;
+  color: white;
+  background-color: rgba(102, 0, 51, 1);
+}
+.jeff a{
+  color: white;
+}
+
+/* Right Aside section */
+aside{
+  display: inline-block;
+  border: 1px solid lightgray;
+  float: right;
+  width: 25%;
+}
+aside header{
+  display: inline-block;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+aside nav{
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(102, 0, 51, 1);
+  /* border: 1px solid black; */
+}
+aside h1{
+  display: inline-block;
+  font-size: 40px;
+  margin-left: 5px;
+  font-weight: bold;
+  color: white;
+  /* border: 1px solid black; */
+}
+.menu{
+  display: inline-block;
+  vertical-align: top;
+  height: 53px;
+  margin-left: 130px;
+  /* border: 1px solid black; */
+}
+aside li{
+  display: inline-block;
+}
+aside i{
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 25px;
+  color: white;
+}
+.lowerBanner{
+  background-color: black;
+}
+.lowerBanner h3{
+  display: inline-block;
+  margin-left: 5px;
+  color: white;
+  font-size: 17px;
+}
+.lowerBanner a{
+  display: inline-block;
+  font-size: 15px;
+  color: yellow;
+  margin-left: 130px;
+}
+.sideNews li{
+  margin-left: 0;
+  padding: 8px;
+  border-bottom: 1px solid lightgray;
+}
+.sideNews span{
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+}
+.sideNews h4 a{
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

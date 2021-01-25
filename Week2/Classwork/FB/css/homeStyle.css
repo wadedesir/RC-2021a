@@ -1,0 +1,143 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background-color: rgba(240, 242, 245, 1);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+section{
+  display: inline-block;
+  vertical-align: top;
+  height: 700px;
+  width: 49.8%;
+  /* border: 1px solid black; */
+}
+.logo{
+  display: block;
+  height: 166px;
+  width: 500px;
+  /* border: 1px solid blue; */
+  margin-left: 220px;
+  margin-top: 170px;
+}
+.left img{
+  width: 301px;
+  height: 106px;
+  margin: 0;
+}
+.left p{
+  display: block;
+  margin: 0;
+  font-size: 28px;
+  margin-left: 30px;
+  /* border: 1px solid blue; */
+}
+
+form{
+  width: 400px;
+  height: 332px;
+  margin-top: 130px;
+  margin-left: 70px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+input{
+  display: block;
+  height: 50px;
+  width: 362px;
+  margin-left: 18px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+form a{
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  width: 90%;
+  margin-left: 18px;
+  height: 35px;
+  border-bottom: 1px solid lightgray;
+}
+.email{
+  margin-top: 20px;
+  color: gray;
+  font-size: 14px;
+}
+.pswd{
+  color: gray;
+  font-size: 14px;
+}
+.loginButton{
+  background-color: rgba(24, 119, 242, 1);
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.newAcc{
+  margin-top: 20px;
+  width: 60%;
+  margin-left: 80px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(66, 183, 42, 1);
+}
+.right p{
+  display: block;
+  /* border: 1px solid black; */
+  margin-left: 130px;
+  font-size: 14px;
+}
+.right span{
+  font-weight: bold;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
