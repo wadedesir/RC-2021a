@@ -6,16 +6,35 @@ header, footer{
   border: 1px solid black;
   clear: both;
 }
-.outer{
+.topmid div{
+  display: block;
   float:left;
   border: 1px solid black;
   height: 150px;
   width: 100%;
+  clear: both;
 }
 
-.outer  > div{
+.lowermid  div{
+  display: block;
   border: 1px solid black;
   float: left;
   height: 150px;
   width: 30%;
+  background-color: crimson;
+}
+.lowermid div + div{
+  border: 1px solid black;
+  width: 70%;
+  background-color: maroon;
+}
+
+@media (max-width: 750px){
+
+  .lowermid div{
+    width: 100%;
+  }
+  .lowermid div + div{
+    width: 100%;
+  }
 }
