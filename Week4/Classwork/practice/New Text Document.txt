@@ -1,0 +1,107 @@
+From Kiany Ortega to Everyone:  07:26 PM
+Love the background
+From Harlan Weber to Everyone:  07:26 PM
+Loren what is happening behind you
+From Kiany Ortega to Everyone:  07:27 PM
+He’s the avatar
+From Shweta A to Everyone:  07:28 PM
+what kind of non profit do you work for?
+oh yes! Thanks
+From Erin Lipman to Everyone:  07:28 PM
+Are crunchies the British one in the gold wrapper? So good!
+From Loren Heubert-Aubry to Everyone:  07:28 PM
+Yes!!
+From Harlan Weber to Everyone:  07:29 PM
+what is this sorcery mike
+From Loren Heubert-Aubry to Everyone:  07:30 PM
+butterfinger underrated
+From Juan Vistro to Everyone:  07:30 PM
+Parle-G?
+From Mike Yavorsky to Everyone:  07:31 PM
+just the one true goldilocks candy harlan
+From Juan Vistro to Everyone:  07:31 PM
+I guess not a candy, but sweet enough
+From Zuri Walters to Everyone:  07:31 PM
+Did Darrell go?
+From Darrell Malone to Everyone:  07:31 PM
+No, I’m here
+From Kiany Ortega to Everyone:  07:32 PM
+Butter scotch is great to
+From Loren Heubert-Aubry to Everyone:  07:33 PM
+better than regular lifesavers even
+From Me to Everyone:  07:33 PM
+I cant get enough of them
+From Albert Lee to Everyone:  07:34 PM
+I think I wanna change my answer to sour gummies actually
+From Kiany Ortega to Everyone:  07:35 PM
+Sounds amazing!!!
+From Loren Heubert-Aubry to Everyone:  07:35 PM
+Anyone ever try those little sweet tart gummy eggs? They're like a cross between gummies and jelly beans
+From Zuri Walters to Everyone:  07:36 PM
+I saw those in a video
+From Albert Lee to Everyone:  07:36 PM
+great to see so many people from Resilient Coders here btw. some of my friends' companies have partnerships and I know Del through Boston Tech Workers for Justice
+From Zuri Walters to Everyone:  07:36 PM
+:)
+From Kiany Ortega to Everyone:  07:37 PM
+Nice I feel honored to take place in the bootcamp
+They are amazing peopel
+From Me to Everyone:  07:37 PM
+It's awesome to see a friend of RC as well Albert
+From Kiany Ortega to Everyone:  07:37 PM
+people
+From Zuri Walters to Everyone:  07:39 PM
+lol
+tnx for that visual
+From Kiany Ortega to Everyone:  07:42 PM
+I resonate with that UI comment
+From Me to Albert Lee:  (Direct Message) 07:46 PM
+Hey Albert, I'd love to connect after this if you're open to it.
+From Juan Vistro to Everyone:  07:53 PM
+Do you ever get project submissions by mutual aid groups or community cooperatives for community centered projects that do not want to be beholden to nonprofits?
+From Niharika Singh to Everyone:  07:55 PM
+neha here from clean slate
+From Juan Vistro to Everyone:  07:59 PM
+?
+From Darrell Malone to Everyone:  08:02 PM
+https://us02web.zoom.us/j/8536530477
+From Alex Merritt to Everyone:  08:05 PM
+https://www.codeforboston.org/projects/
+From Matt Zagaja to Everyone:  08:10 PM
+@Juan Apologies I missed your question earlier. I think Plogalong might fit in that category as it is not a non-profit, but a community.
+
+mattz@codeforboston.org
+trisk@acm.org - Albert Lee
+
+systems software programming.
+
+worked solaris years Chicago
+
+systems architecure in college
+
+programs mainly in c
+
+works with drivers,kernels, schedulers as well
+
+mainly lower level software.
+
+network stack,
+
+go language.
+
+rust language.
+
+knows dell and friend with someone who recruited resilient coders
+
+fizzbuzz
+
+print numbers 1 to x where x is e number thats passed in
+
+if divisible by 3 print fizz
+
+if divisible by 5 print fizzbuzz
+
+if divisible by both print fizzbuzz
+
+bomberman
+single image that moves on screen based on key presses

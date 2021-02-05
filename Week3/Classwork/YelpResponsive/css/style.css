@@ -20,23 +20,357 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
+html{
+  font-size: 10px;
+}
 body {
-
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+*{
+  text-decoration: none;
+}
+/*
+#wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+ */
 header {
+  background: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/fa8d73b85ad8/assets/img/home/hero_photos/J4bBEXXBIHmYLl50X1l72g.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  height: 620px;
+  border: 1px solid transparent;
+}
+li{
+  display: inline;
+  /* border: 1px solid black; */
+  position: relative;
+  margin-left: 2.5%;
+  left: 10%;
+}
+.topNav{
+  width: 100%;
+  margin-top: 2%;
+  font-size: 1.7rem;
+}
+.leftNav{
+  position: relative;
+  left: 10%;
+}
+.rightNav{
+  margin-left: 40%;
+}
+.button{
+  max-width: 6%;
+  max-height: 30px;
+  border-radius: 5px;
+  border-color: white;
+  background-color: transparent;
+  color: white;
+  /* height: 200%; */
+  font-weight: bold;
+}
+nav{
+  display: block;
+  /* border: 1px solid black; */
+}
+nav a{
+  color: white;
+}
+.logo{
+  max-width: 12.5%;
+  max-height: 12.5%;
+
+  position: relative;
+  margin-top: 6%;
+  left: 45%;
+}
+form{
+  position: relative;
+  left: 18%;
+  margin-top: 3%;
+  width: 65%;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  border: none;
+}
+.find,
+.near{
+  width: 48%;
+  height: 40px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 2rem;
+  color: gray;
+}
+.near{
+  width: 46%;
+  /* border-left: 1px solid gray; */
+}
+.fas{
+  vertical-align: top;
+  background-color: rgba(211, 35, 35, 1);
+  height: 40px;
+  width: 6%;
+  color: white;
+  padding-top: 9px;
+  text-align: center;
+  font-size: 2rem;
+}
+.lowerNav{
+  font-size: 1.5rem;
+  position: relative;
+  top: 2.5%;
+  left: 30%;
+  width: 50%;
 
 }
+header span{
+  position: relative;
+  /* border: 1px solid black; */
+  color: white;
+  font-weight: bold;
+  top: 35%;
+  left: 46%;
+  width: 50%;
+}
+.cred{
+  top: 38%;
+  left: 38.5%;
+  font-weight: normal;
+}
+header strong{
+  font-weight: bold;
+}
 
+h2{
+  color: rgba(211, 35, 35, 1);
+  width: auto;
+  font-size: 2.5rem;
+  /* border: 1px solid black; */
+  margin-left: 42%;
+  margin-right: 42%;
+  text-align: center;
+  margin-top: 2%;
+}
+.bottomNav{
+  font-size: 1.5rem;
+  margin-top: 1.5%;
+  margin-left: 13%;
+  /* margin-right: 20%; */
+}
+.bottomNav a{
+  color: black;
+}
+h3{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.8rem;
+  color: rgba(211, 35, 35, 1);
+  text-align: center;
+  margin-top: 3%;
+  /* border: 1px solid black; */
+}
+.restaurants{
+  height: 300px;
+  display: flex;
+
+  justify-content: center;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  /* border: 1px solid lightgray;; */
+}
+.locations{
+ max-width: 100%;
+ max-height: 100%;
+}
+.restaurants div{
+  flex: 1;
+  max-width: 20%;
+  border: 1px solid lightgray;
+}
+.stars{
+  max-width: 40%;
+  max-height: 25%;
+}
+h4{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: navy;
+}
+.restaurants span{
+  display: block;
+  margin-top: 2%;
+  font-size: 1.2rem;
+}
+.restaurants strong{
+  font-size: 1.3rem;
+  color: orange;
+}
+p{
+  font-size: 1.3rem;
+  color: #0000EE;
+  text-align: center;
+}
+.extras{
+  background-color: whitesmoke;
+  height: 250px;
+}
+.busCat{
+  margin-top: 2%;
+}
+.categories{
+  display: flex;
+  margin-top: 3%;
+  height: 150px;
+  justify-content: center;
+  justify-content: space-around;
+}
+.categories div{
+  flex: 1;
+  max-width: 13%;
+  background-color: white;
+  /* border: 1px solid black; */
+}
+.categories a i{
+  /* border: 1px solid black; */
+  position: relative;
+  top: 15%;
+  left: 30%;
+  background-color: white;;
+  height: auto;
+  width: auto;
+  color: black;
+  padding-top: 0;
+  text-align: center;
+  font-size: 8.5rem;
+}
+.categories span{
+  position: relative;
+  top: 77%;
+  right: 8%;
+  font-weight: bold;
+
+}
 footer {
 
 }
 
-/******************************************
+
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media (max-width: 1200px){
+  header{
+    height: 400px;
+  }
+  .rightNav{
+    margin-left: 30%;
+  }
+  header span,
+  .cred{
+    position: relative;
+    /* border: 1px solid black; */
+    color: white;
+    /* font-weight: bold; */
+    top: 25%;
+    left: 40%;
+    width: 50%;
+  }
+  .button{
+    max-width: 9%;
+  }
+  .bottomNav{
+    /* margin-right: 5%; */
+    margin-left: 0%;
+    left: 0%;
+  }
+  .categories a i{
+    display: block;
+    position: static;
+    margin-top:10%;
+    /* top: 15%; */
+    /* left: 18%; */
+    background-color: white;;
+    max-height: auto;
+    max-width: auto;
+    color: black;
+    font-size: 6.5rem;
+  }
+  .categories span{
+    top: 30%;
+    left: 19%;
+    /* right: 4%; */
+  }
+}
+
+@media (max-width: 900px){
+  header{
+    height: 400px;
+  }
+  .rightNav{
+    margin-left: 10%;
+  }
+  header span,
+  .cred{
+    position: relative;
+    /* border: 1px solid black; */
+    color: white;
+    /* font-weight: bold; */
+    top: 25%;
+    left: 40%;
+    width: 50%;
+  }
+  .button{
+    max-width: 9%;
+  }
+  .bottomNav{
+    /* margin-right: 5%; */
+    /* margin-left: auto; */
+    left: 0;
+    overflow: hidden;
+  }
+  .lowerNav{
+    font-size: 1.5rem;
+    position: relative;
+    top: 2.5%;
+    left: 25%;
+    width: 50%;
+    overflow: hidden;
+  }
+  h2{
+    margin-left: 35%;
+    margin-right: 35%
+  }
+  .categories a i{
+    display: block;
+    position: static;
+    margin-top:10%;
+    /* top: 15%; */
+    /* left: 18%; */
+    background-color: white;;
+    max-height: auto;
+    max-width: auto;
+    color: black;
+    font-size: 6.5rem;
+  }
+  .categories span{
+    top: 30%;
+    left: 19%;
+    /* right: 4%; */
+  }
+}

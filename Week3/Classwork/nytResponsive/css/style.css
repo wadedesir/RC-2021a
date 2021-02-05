@@ -1,6 +1,8 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  text-decoration: none;
+  color: black;
 }
 
 /* Clear fix hack */
@@ -22,7 +24,11 @@
 /*******************************************/
 
 body {
-
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: 'Times New Roman', Times, Arial, sans-serif;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 
@@ -30,13 +36,293 @@ body {
 /* LAYOUT
 /*******************************************/
 header {
-
+/* border: 1px solid black; */
+}
+h1{
+  font-size: 3rem;
+  text-align: center;
+}
+ul{
+  display: flex;
+  /* border: 1px solid black; */
+  font-weight: bold;
+}
+.ul3{
+  display: flex;
+  /* border: 1px solid black; */
+  border-top: 2px solid black;
+  border-bottom: 1px solid lightgray;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: black;
+}
+.nav2{
+  display: flex;
+  /* width: 90%; */
+  justify-content: center;
+  /* justify-content: space-around; */
+}
+svg{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-footer {
-
+main{
+  display: flex;
 }
+.topMost{
+  display: flex;
+  font-size: 1.1rem;
+  justify-content: space-between;
+}
+.topMost a{
+  /* justify-content: flex-end; */
+  /* margin-left: 10%; */
+}
+.topMost div{
+  display: flex;
+  /* border: 1px solid black; */
+  width: 300px;
+}
+.btn{
+  background-color: rgba(98, 136, 165, 1);
+  color: white;
+}
+.left,
+.right{
+  justify-content: space-evenly;
+  align-items: center;
+}
+.right input{
+  font-weight: bold;
+  height: 28px;
+}
+.lang,
+.lang div{
+  display: flex;
+  justify-content: center;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+.lang li{
+  font-size: 1rem;
+}
+.chinese{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.info {
+  display: flex;
+}
+.leftCol{
+  max-width: 300px;
+}
+.leftCol h3{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.leftCol h2{
+  font-weight: bold;
+  font-size: 2rem;
+  font-style: italic;
+}
+.leftCol span{
+  font-size: 1rem;
+}
+.cred{
+  font-size: 1rem;
+  margin-top: 1%;
+  color: gray;
+}
+.trumpSide{
+  display: block;
+  list-style: none;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+.rubio h3{
+  font-size: 1.7rem;
+  font-style: italic;
+}
+.rubio p{
+  font-size: 1rem;
+}
+.midCol{
+  max-width: 30%;
+  padding: 5px;
+}
+.midCol img{
+  max-width: 100%;
+}
+.midCol p{
+  font-size: 1rem;
+  font-weight: normal;
+}
+.midCol h3{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.xNav{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  /* border-left: 1px solid gray; */
+}
+.midCol h4{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2%;
+}
+.man{
+  float: right;
+}
+.opinion{
+  line-height: 1.2;
+  border-left: 1px solid lightgray;
+  padding: 5px;
+}
+.opinion h3{
+  font-weight: bold;
+  text-align: center;
+}
+.topOpinion img{
+  float: right;
+}
+.topOpinion{
+  border-bottom: 2px solid lightgray;
+  display: flex;
+}
+.topOpinion section{
+  padding: 1%;
+}
+.obama{
+  border-right: 1px solid lightgray;
+}
+.topOpinion h4{
+  font-weight: bold;
+  font-size: 1rem;
+}
+.topOpinion p{
+  font-size: 1rem;
+}
+.topOpinion span{
+    color: gray;
+}
+.topOpinion div{
+  margin-top: 2%;
+}
+
+.topOpinion ul{
+  display: block;
+  /* list-style: square; */
+  margin-top: 4%;
+}
+.small{
+  display: flex;
+  margin-top: 3%;
+  /* justify-content: space-evenly; */
+  /* border: 1px solid black; */
+}
+.smallLeft,
+.smallRight{
+  padding: 5px;
+  flex: 1;
+}
+.smallLeft{
+  border-right: 1px solid lightgray;
+}
+.small h5{
+  font-weight: bold;
+  font-size: 1rem;
+  /* border: 1px solid black; */
+}
+.small span{
+
+  font-size: 0.9rem;
+  /* border: 1px solid black; */
+}
+.small i{
+  /* float: right; */
+  text-align: center;
+  font-size: 3rem;
+}
+.large{
+  display: flex;
+  flex-direction:  column;
+  height: 35%;
+}
+.large div{
+  flex: 1;
+  border-top: 1px solid lightgray;
+}
+.large span,
+.large p{
+  font-size: 1rem;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media (max-width: 1000px){
+  .dispose{
+    display: none;
+  }
+}
+@media (max-width: 800px){
+  .opinion{
+    line-height: 1.2;
+    border-left: 1px solid lightgray;
+    padding: 5px;
+    display: none;
+  }
+  .leftCol{
+    max-width: 300px;
+    /* display: none; */
+    /* flex:1; */
+  }
+  .midCol{
+    /* flex: 1; */
+    /* max-width: auto; */
+    max-width: 60%;
+  }
+  .ul3{
+    /* display: flex; */
+    /* border: 1px solid black; */
+    border-top: 2px solid black;
+    border-bottom: 1px solid lightgray;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: black;
+    display: hidden;
+  }
+}
+
+@media (max-width: 600px){
+  main{
+    flex-direction: column;
+  }
+  .midCol{
+    max-width: 100%;
+    order: 1;
+  }
+  .leftCol{
+    margin-top: 5%;
+    max-width: 500px;
+    order: 2;
+  }
+  .opinion{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    order: 3;
+  }
+}

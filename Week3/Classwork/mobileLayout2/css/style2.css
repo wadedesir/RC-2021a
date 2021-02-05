@@ -6,20 +6,31 @@ header, footer{
   border: 1px solid black;
   clear: both;
 }
-.outer{
-  float:left;
+.topmid{
+  /* float:left; */
   border: 1px solid black;
   height: 150px;
   width: 100%;
 }
 
-.outer  > div{
+.box1{
   border: 1px solid black;
   float: left;
   height: 150px;
   width: 30%;
 }
+.box2{
+  border: 1px solid black;
+  float: left;
+  height: 150px;
+  width: 70%;
+}
 
-@media (max-width: 800px;){
-  
+@media (max-width: 850px){
+  .box2{
+    width: 100%;
+  }
+  .box1{
+    width: 100%;
+  }
 }
