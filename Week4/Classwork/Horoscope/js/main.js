@@ -72,7 +72,55 @@ function horoscope(day){
     document.querySelector('.gemini').style.display = 'flex'
     lastParagraph = '.gemini'
   }
-
+  else if (((month === 'June') && (day >= 21)) || ((month === 'July') && (day <= 22))){
+    document.querySelector('h1').innerText = 'Cancer'
+    cancer.style.display = 'flex'
+    lastHoroscope = cancer
+    document.querySelector('.cancer').style.display = 'flex'
+    lastParagraph = '.cancer'
+  }
+  else if (((month === 'July') && (day >= 23)) || ((month === 'August') && (day <= 22))){
+    document.querySelector('h1').innerText = 'Leo'
+    leo.style.display = 'flex'
+    lastHoroscope = leo
+    document.querySelector('.leo').style.display = 'flex'
+    lastParagraph = '.leo'
+  }
+  else if (((month === 'August') && (day >= 23)) || ((month === 'September') && (day <= 22))){
+    document.querySelector('h1').innerText = 'Virgo'
+    virgo.style.display = 'flex'
+    lastHoroscope = virgo
+    document.querySelector('.virgo').style.display = 'flex'
+    lastParagraph = '.virgo'
+  }
+  else if (((month === 'September') && (day >= 23)) || ((month === 'October') && (day <= 22))){
+    document.querySelector('h1').innerText = 'Libra'
+    libra.style.display = 'flex'
+    lastHoroscope = libra
+    document.querySelector('.libra').style.display = 'flex'
+    lastParagraph = '.libra'
+  }
+  else if (((month === 'October') && (day >= 23)) || ((month === 'November') && (day <= 21))){
+    document.querySelector('h1').innerText = 'Scorpio'
+    scorpio.style.display = 'flex'
+    lastHoroscope = scorpio
+    document.querySelector('.scorpio').style.display = 'flex'
+    lastParagraph = '.scorpio'
+  }
+  else if (((month === 'November') && (day >= 22)) || ((month === 'December') && (day <= 21))){
+    document.querySelector('h1').innerText = 'Saggitarius'
+    saggitarius.style.display = 'flex'
+    lastHoroscope = saggitarius
+    document.querySelector('.saggitarius').style.display = 'flex'
+    lastParagraph = '.saggitarius'
+  }
+  else if (((month === 'December') && (day >= 22)) || ((month === 'January') && (day <= 19))){
+    document.querySelector('h1').innerText = 'Capricorn'
+    capricorn.style.display = 'flex'
+    lastHoroscope = capricorn
+    document.querySelector('.capricorn').style.display = 'flex'
+    lastParagraph = '.capricorn'
+  }
   main.style.display = 'flex'
   reset = true
 }
