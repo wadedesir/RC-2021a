@@ -18,21 +18,21 @@
         <ul>
           <li class="leftNav"><a href="#">Write a review<i class="fab fa-accessible-icon"></i></a></li>
           <li><a href="#">Events</a></li>
-          <li><a href="#">Talk</a></li>
+          <li><a class="hidden" href="#">Talk</a></li>
           <li class="rightNav"><a href="#">Log In</a></li>
           <li><input class="button" type="button" name="" value="Sign Up"></li>
         </ul>
       </nav>
       <img class="logo" src="assets/logo.png" alt="Yelp logo">
       <form class="" action="yelp.html" method="post">
-        <input class="find" type="search" name="" placeholder="Find '...' '...'"><input class="near" type="search" name="" placeholder="Near '...' '...'"><a class="sub" href="#"><i class="fas fa-search"></i></a> <!-- Placeholder text for search fields -->
+        <input class="find" type="search" name="" placeholder="Find plumbers, delivery, takout"><input class="near" type="search" name="" placeholder="Near '...'"><a class="sub" href="#"><i class="fas fa-search"></i></a> <!-- Placeholder text for search fields -->
         <!-- everything above this is inline to remove the space between inputs -->
       </form>
       <nav class="lowerNav">
         <ul>
           <li><a href="#">Restaurants</a></li>
           <li><a href="#">Nightlife</a></li>
-          <li><a href="#">Home Services</a></li>
+          <li><a class="hidden" href="#">Home Services</a></li>
           <li><a href="#">Delivery</a></li>
         </ul>
       </nav>
@@ -46,10 +46,10 @@
         <ul>
           <li class="sanFran"><a href="#">San Francisco</a></li>
           <li><a href="#">New York</a></li>
-          <li><a href="#">San Jose</a></li>
+          <li><a class="hidden" href="#">San Jose</a></li>
           <li><a href="#">Los Angeles</a></li>
-          <li><a href="#">Chicago</a></li>
-          <li><a href="#">Palo Alto</a></li>
+          <li><a class="chitown" href="#">Chicago</a></li>
+          <li><a class="hidden" href="#">Palo Alto</a></li>
           <li><a href="#">More Cities</a></li>
         </ul>
       </nav>
@@ -59,50 +59,50 @@
       <h3>Hot & New Businesses</h3>
       <div class="restaurants">
         <div> <!-- Once again I hope im using the divs correctly -->
-          <a href="#"><img class="locations" src="https://via.placeholder.com/300x130" alt="Picture of Restaurant"></a>
+          <a href="#"><img class="locations" src="assets/kor.png" alt="Picture of Restaurant"></a>
           <h4>Kor Tor Mor</h4>
-          <a href="#"><img class="stars" src="assets/star-review.png" alt="Star Review"> 7 reviews</a>
+          <a class="innerStars" href="#"><img class="stars" src="assets/star-review.png" alt="Star Review"> 7 reviews</a>
           <span>Thai</span>
           <span>Davis Square</span>
           <span><strong>🔥 Opened 5 Weeks ago</strong></span>
         </div>
         <div>
-          <a href="#"><img class="locations" src="https://via.placeholder.com/300x130" alt="Picture of Restaurant"></a>
+          <a href="#"><img class="locations" src="assets/flatbread.png" alt="Picture of Restaurant"></a>
           <h4>Flatbread Company Brighton</h4>
-          <a href="#"><img class="stars" src="assets/star-review.png" alt="Star Review"> 11 reviews</a>
+          <a class="innerStars" href="#"><img class="stars" src="assets/star-review.png" alt="Star Review"> 11 reviews</a>
           <span>$$ • Pizza</span>
           <span>Boston, MA</span>
           <span><strong>🔥 Opened 6 Weeks ago</strong></span>
         </div>
-        <div>
-          <a href="#"><img class="locations" src="https://via.placeholder.com/300x130" alt="Picture of Restaurant"></a>
+        <div class="kor" >
+          <a href="#"><img class="locations" src="assets/citrus.png" alt="Picture of Restaurant"></a>
           <h4>Citrus & Salt</h4>
-          <a href="#"><img class="stars" src="assets/star-review.png" alt="Star Review"> 27 reviews</a>
+          <a class="innerStars" href="#"><img class="stars" src="assets/star-review.png" alt="Star Review"> 27 reviews</a>
           <span>$$ • Cocktail Bars, Mexican</span>
           <span>back Bay</span>
           <span><strong>🔥 Opened 6 Weeks ago</strong></span>
         </div>
       </div>
-      <p><a href="#">See more hot and new businesses</a></p>
+      <p class="moreLink"><a href="#">See more hot and new businesses</a></p>
     </section>
 
     <section class="extras">
       <h3 class="busCat">Browse Businesses by Category</h3>
       <div class="categories"> <!-- Put all of these into one div, I see no reason why they should be separate. Styling can be handled in css -->
         <div>
-          <a href="#"><i class="fas fa-utensils"></i></a>
+          <img src="assets/res.png" alt="">
           <span>Restaurants</span>
         </div>
         <div>
-          <a href="#"><i class="fas fa-shopping-bag"></i></a>
+          <img src="assets/shop.png" alt="">
           <span>Shopping</span>
         </div>
-        <div>
-          <a href="#"><i class="fas fa-glass-martini-alt"></i></a>
+        <div id="night">
+          <img src="assets/night.png" alt="">
           <span>Nightlife</span>
         </div>
         <div>
-          <a href="#"><i class="fas fa-futbol"></i></a>
+          <img src="assets/active.png" alt="">
           <span>Active Life</span>
         </div>
       </div>

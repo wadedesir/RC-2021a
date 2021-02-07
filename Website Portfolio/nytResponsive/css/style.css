@@ -1,0 +1,377 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: 'Times New Roman', Times, Arial, sans-serif;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+/* border: 1px solid black; */
+}
+h1{
+  font-size: 3rem;
+  text-align: center;
+}
+ul{
+  display: flex;
+  /* border: 1px solid black; */
+  font-weight: bold;
+}
+.ul3{
+  display: flex;
+  /* border: 1px solid black; */
+  border-top: 2px solid black;
+  border-bottom: 1px solid lightgray;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: black;
+}
+.nav2{
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: center;
+  margin-bottom: 0.6%;
+}
+svg{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main{
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.topMost{
+  display: flex;
+  font-size: 1.1rem;
+  justify-content: space-between;
+}
+.topMost a{
+  /* justify-content: flex-end; */
+  /* margin-left: 10%; */
+}
+.topMost div{
+  display: flex;
+  /* border: 1px solid black; */
+  width: 300px;
+}
+.btn{
+  background-color: rgba(98, 136, 165, 1);
+  color: white;
+}
+.left,
+.right{
+  justify-content: space-evenly;
+  align-items: center;
+}
+.right input{
+  font-weight: bold;
+  border-radius: 3px;
+  border-color: transparent;
+  height: 28px;
+}
+.lang,
+.lang div{
+  display: flex;
+  justify-content: center;
+}
+.lang{
+  margin-top: 1%;
+  border-bottom: 1px solid lightgray;
+}
+.lang div{
+  border: 1px solid lightgray;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.lang li{
+  font-size: 1rem;
+}
+.chinese{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.chinese a,
+.spanish a{
+  color: gray;
+  font-weight: normal;
+}
+.info {
+  width: 120%;
+  margin-left: -10%;
+}
+.info li{
+  margin-left: 3%;
+}
+.info span{
+  color: gray;
+}
+.leftCol,
+.midCol,
+.opinion{
+  margin-top: 0.65%;
+}
+.leftCol{
+  /* max-width: 300px; */
+  max-width: 25%;
+}
+.leftCol h3{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.leftCol h2{
+  font-weight: bold;
+  font-size: 2rem;
+  font-style: italic;
+}
+.leftCol span{
+  font-size: 1rem;
+}
+.cred{
+  font-size: 1rem;
+  margin-top: 1%;
+  color: gray;
+}
+.trumpSide{
+  display: block;
+  list-style: none;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+.rubio h3{
+  font-size: 1.7rem;
+  font-style: italic;
+}
+.rubio p{
+  font-size: 1rem;
+}
+.midCol{
+  max-width: 40%;
+  padding: 5px;
+}
+.midCol img{
+  max-width: 100%;
+}
+.midCol p{
+  font-size: 1rem;
+  font-weight: normal;
+}
+.midCol h3{
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 2%;
+}
+.midCol h5{
+  font-weight: bold;
+  margin-top: 1%;
+}
+.xNav{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  /* border-left: 1px solid gray; */
+}
+.midCol h4{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-top: 2%;
+}
+.man{
+  float: right;
+  width: 20%;
+}
+.opinion{
+  line-height: 1.2;
+  border-left: 1px solid lightgray;
+  padding: 5px;
+  max-width: 36.5%;
+}
+.opinion h3{
+  font-weight: bold;
+  text-align: center;
+}
+.topOpinion img{
+  float: right;
+  max-width: 15%;
+}
+.topOpinion{
+  border-bottom: 2px solid lightgray;
+  display: flex;
+}
+.topOpinion section{
+  padding: 1%;
+}
+.obama{
+  border-right: 1px solid lightgray;
+}
+.topOpinion h4{
+  font-weight: bold;
+  font-size: 1rem;
+}
+.topOpinion p{
+  font-size: 1rem;
+}
+.topOpinion span{
+    color: gray;
+}
+.topOpinion div{
+  margin-top: 2%;
+}
+
+.topOpinion ul{
+  display: block;
+  margin-top: 4%;
+}
+.small{
+  display: flex;
+  margin-top: 3%;
+  /* border: 1px solid black; */
+}
+.smallLeft,
+.smallRight{
+  padding: 5px;
+  flex: 1;
+}
+.smallLeft{
+  border-right: 1px solid lightgray;
+}
+.small h5{
+  font-weight: bold;
+  font-size: 1rem;
+  /* border: 1px solid black; */
+}
+.small span{
+
+  font-size: 0.9rem;
+  /* border: 1px solid black; */
+}
+.small i{
+  /* float: right; */
+  text-align: center;
+  font-size: 3rem;
+}
+.large{
+  display: flex;
+  flex-direction:  column;
+  height: 35%;
+}
+.large div{
+  flex: 1;
+  border-top: 1px solid lightgray;
+}
+.large span,
+.large p{
+  font-size: 1rem;
+}
+.large img{
+  max-width: 10%;
+  float: right;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media (max-width: 1000px){
+  .dispose{
+    display: none;
+  }
+  .midCol{
+    max-width: 60%;
+  }
+  .leftCol{
+    max-width: 300px;
+  }
+  main{
+    flex-wrap: wrap;
+  }
+  .opinion{
+    max-width: 100%;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 800px){
+  main{
+    flex-direction: column;
+  }
+
+  .leftCol{
+    max-width: 100%;
+    order: 2;
+  }
+  .midCol{
+    order: 1;
+    max-width: 100%;
+  }
+  .opinion{
+    margin-left: 0;
+    max-width: 100%;
+    order: 3;
+  }
+
+  .ul3{
+    border-top: 2px solid black;
+    border-bottom: 1px solid lightgray;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: black;
+    display: hidden;
+  }
+}
+
+@media (max-width: 600px){
+  .midCol{
+    max-width: 100%;
+    order: 1;
+  }
+  .leftCol{
+    margin-top: 5%;
+    max-width: 500px;
+    order: 2;
+  }
+  .opinion{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    order: 3;
+  }
+}

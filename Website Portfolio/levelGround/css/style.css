@@ -1,0 +1,247 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html{
+  font-size: 12px;
+}
+body {
+  line-height: 1.4;
+  font-family: 'Oswald', Arial, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+background-color: rgba(102, 118, 138, 1);
+height: 350px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.headerNav{
+  /* flex-direction: row; */
+  height: 40px;
+}
+.headerNav li{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 3%;
+    margin-top: 0.5%;
+    /* color: white; */
+}
+.headerNav li a{
+  color: white;
+}
+.headerNav .logo{
+  margin-left: 34%;
+}
+.headerNav .btn{
+  margin-left: 40%;
+  margin-bottom: 5%;
+}
+.logo i{
+  font-size: 2rem;
+  color: white;
+}
+.btn input{
+  border-radius: 3px;
+  border-color: white;
+  border-color: transparent;
+}
+.lowerHeader{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.lowerHeader h1{
+  margin-top: 1%;
+  font-size: 4rem;
+  color: white;
+}
+.lowerHeader p{
+  font-size: 1.3rem;
+  padding: 2%;
+  color: white;
+}
+.lowerHeader a{
+  font-size: 2rem;
+  font-weight: 200;
+  color: white;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+.why{
+  height: 200px;
+  text-align: center;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.why h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.why p{
+  margin-top: 1%;
+  font-size: 1.3rem;
+}
+
+.visit{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  height: 380px;
+  background-color: rgba(219, 223, 226, 1);
+}
+.visit div{
+  padding: 1%;
+}
+.visit h3{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.visit p{
+  font-size: 1.2rem;
+}
+.visit input{
+  margin-top: 2%;
+  height: 40px;
+  width: 150px;
+  border: 1px solid gray;
+  background-color: rgba(219, 223, 226, 1);
+}
+
+.volunteer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+  padding: 2%;
+}
+.volunteer h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.volunteer p{
+  margin-top: 1%;
+  font-size: 1.2rem;
+}
+.volunteer input{
+  margin-top: 1.5%;
+  width: 150px;
+  height: 40px;
+  border:none;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  height: 130px;
+  background-color: rgba(22, 31, 42, 1);
+}
+footer div{
+  margin-top: 8%;
+  /* border: 1px solid white; */
+  width: 120%;
+}
+footer span{
+  color: white;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.gray{
+  color: gray;
+}
+.social{
+  font-size: 1.6rem;
+  color: white;
+  text-align:  center;
+}
+.social i{
+  margin-left: 5%;
+}
+footer section{
+ max-width: 30%;
+ /* border: 1px solid black; */
+ font-size: 1.2rem;
+ color: white;
+}
+.leftFooter{
+  margin-left: 2%;
+}
+.rightFooter{
+  margin-left: 78%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.weak{
+  font-weight: lighter;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media (max-width: 1100px){
+  .headerNav .btn{
+    margin-left: 34%;
+  }
+  .headerNav .logo{
+    margin-left: 31%;
+  }
+  .rightFooter{
+    margin-left: 70%;
+  }
+}
+
+@media (max-width: 780px){
+  .rightFooter{
+    margin-left: 60%;
+  }
+  .headerNav .btn{
+    margin-left: 30%;
+  }
+  .headerNav .logo{
+    margin-left: 29%;
+  }
+}
+
+@media (max-width: 650px){
+  html{
+    font-size: 9.5px;
+  }
+  .headerNav .btn{
+    margin-left: 28%;
+  }
+  .headerNav .logo{
+    margin-left: 27%;
+  }
+}

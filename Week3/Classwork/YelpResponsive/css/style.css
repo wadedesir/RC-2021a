@@ -189,7 +189,7 @@ h3{
   height: 300px;
   display: flex;
 
-  justify-content: center;
+  /* justify-content: center; */
   justify-content: space-evenly;
   /* flex-direction: column; */
   /* border: 1px solid lightgray;; */
@@ -201,11 +201,20 @@ h3{
 .restaurants div{
   flex: 1;
   max-width: 20%;
+  height: 320px;
   border: 1px solid lightgray;
 }
 .stars{
-  max-width: 40%;
-  max-height: 25%;
+  max-width: 25%;
+  /* height: 50px; */
+  /* max-height: 10%; */
+}
+.innerStars{
+  display: flex;
+  align-items: center;
+}
+.moreLink{
+  margin-top: 2%;
 }
 h4{
   font-size: 1.5rem;
@@ -241,30 +250,21 @@ p{
   justify-content: space-around;
 }
 .categories div{
-  flex: 1;
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 13%;
   background-color: white;
   /* border: 1px solid black; */
 }
-.categories a i{
+.categories img{
+  width: 80%;
   /* border: 1px solid black; */
-  position: relative;
-  top: 15%;
-  left: 30%;
-  background-color: white;;
-  height: auto;
-  width: auto;
-  color: black;
-  padding-top: 0;
-  text-align: center;
-  font-size: 8.5rem;
 }
 .categories span{
-  position: relative;
-  top: 77%;
-  right: 8%;
   font-weight: bold;
-
 }
 footer {
 
@@ -299,38 +299,28 @@ footer {
     margin-left: 0%;
     left: 0%;
   }
-  .categories a i{
-    display: block;
-    position: static;
-    margin-top:10%;
-    /* top: 15%; */
-    /* left: 18%; */
-    background-color: white;;
-    max-height: auto;
-    max-width: auto;
-    color: black;
-    font-size: 6.5rem;
+  .categories div{
+    max-width: 17%;
+  }
+  .categories img{
+    width: 80%;
   }
   .categories span{
     top: 30%;
     left: 19%;
-    /* right: 4%; */
   }
 }
+
+
 
 @media (max-width: 900px){
   header{
     height: 400px;
   }
-  .rightNav{
-    margin-left: 10%;
-  }
   header span,
   .cred{
     position: relative;
-    /* border: 1px solid black; */
     color: white;
-    /* font-weight: bold; */
     top: 25%;
     left: 40%;
     width: 50%;
@@ -339,9 +329,6 @@ footer {
     max-width: 9%;
   }
   .bottomNav{
-    /* margin-right: 5%; */
-    /* margin-left: auto; */
-    left: 0;
     overflow: hidden;
   }
   .lowerNav{
@@ -354,23 +341,64 @@ footer {
   }
   h2{
     margin-left: 35%;
-    margin-right: 35%
+    margin-right: 35%;
   }
-  .categories a i{
-    display: block;
-    position: static;
-    margin-top:10%;
-    /* top: 15%; */
-    /* left: 18%; */
-    background-color: white;;
-    max-height: auto;
-    max-width: auto;
-    color: black;
-    font-size: 6.5rem;
+  .restaurants div{
+    max-width: 30%;
   }
   .categories span{
     top: 30%;
     left: 19%;
-    /* right: 4%; */
+
+  }
+}
+
+@media (max-width: 750px){
+  header{
+    height: 300px;
+  }
+  .moreLink{
+    margin-top: 5%;
+  }
+  .hidden{
+    display: none;
+  }
+
+  .rightNav{
+    margin-left: 14%;
+  }
+
+  .cred{
+    top: 25%;
+    left: 40%;
+  }
+  .categories div{
+    max-width: 20%;
+  }
+}
+
+@media (max-width: 600px){
+
+  .restaurants div{
+    max-width: 45%;
+  }
+  .chitown,
+  .kor,
+  #night{
+    display: none;
+  }
+  .button{
+    max-width: 13%;
+  }
+  .rightNav{
+    margin-left: 10%;
+  }
+  header span,
+  .cred{
+    top: 30%;
+    left: 30%;
+  }
+  .categories div{
+    max-width: 25%;
   }
 }

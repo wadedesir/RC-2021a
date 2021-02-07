@@ -60,9 +60,9 @@ ul{
 }
 .nav2{
   display: flex;
-  /* width: 90%; */
+  /* border: 1px solid black; */
   justify-content: center;
-  /* justify-content: space-around; */
+  margin-bottom: 0.6%;
 }
 svg{
   display: flex;
@@ -72,6 +72,7 @@ svg{
 
 main{
   display: flex;
+  /* flex-wrap: wrap; */
 }
 .topMost{
   display: flex;
@@ -98,14 +99,23 @@ main{
 }
 .right input{
   font-weight: bold;
+  border-radius: 3px;
+  border-color: transparent;
   height: 28px;
 }
 .lang,
 .lang div{
   display: flex;
   justify-content: center;
+}
+.lang{
+  margin-top: 1%;
+  border-bottom: 1px solid lightgray;
+}
+.lang div{
   border: 1px solid lightgray;
-  border-radius: 8px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .lang li{
   font-size: 1rem;
@@ -114,11 +124,29 @@ main{
   margin-left: 5px;
   margin-right: 5px;
 }
+.chinese a,
+.spanish a{
+  color: gray;
+  font-weight: normal;
+}
 .info {
-  display: flex;
+  width: 120%;
+  margin-left: -10%;
+}
+.info li{
+  margin-left: 3%;
+}
+.info span{
+  color: gray;
+}
+.leftCol,
+.midCol,
+.opinion{
+  margin-top: 0.65%;
 }
 .leftCol{
-  max-width: 300px;
+  /* max-width: 300px; */
+  max-width: 25%;
 }
 .leftCol h3{
   font-size: 1.1rem;
@@ -153,7 +181,7 @@ main{
   font-size: 1rem;
 }
 .midCol{
-  max-width: 30%;
+  max-width: 40%;
   padding: 5px;
 }
 .midCol img{
@@ -166,6 +194,11 @@ main{
 .midCol h3{
   font-size: 1.3rem;
   font-weight: bold;
+  margin-top: 2%;
+}
+.midCol h5{
+  font-weight: bold;
+  margin-top: 1%;
 }
 .xNav{
   display: flex;
@@ -177,14 +210,17 @@ main{
   font-size: 1rem;
   font-weight: bold;
   margin-top: 2%;
+  margin-top: 2%;
 }
 .man{
   float: right;
+  width: 20%;
 }
 .opinion{
   line-height: 1.2;
   border-left: 1px solid lightgray;
   padding: 5px;
+  max-width: 36.5%;
 }
 .opinion h3{
   font-weight: bold;
@@ -192,6 +228,7 @@ main{
 }
 .topOpinion img{
   float: right;
+  max-width: 15%;
 }
 .topOpinion{
   border-bottom: 2px solid lightgray;
@@ -219,13 +256,11 @@ main{
 
 .topOpinion ul{
   display: block;
-  /* list-style: square; */
   margin-top: 4%;
 }
 .small{
   display: flex;
   margin-top: 3%;
-  /* justify-content: space-evenly; */
   /* border: 1px solid black; */
 }
 .smallLeft,
@@ -264,7 +299,10 @@ main{
 .large p{
   font-size: 1rem;
 }
-
+.large img{
+  max-width: 10%;
+  float: right;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -274,27 +312,41 @@ main{
   .dispose{
     display: none;
   }
-}
-@media (max-width: 800px){
-  .opinion{
-    line-height: 1.2;
-    border-left: 1px solid lightgray;
-    padding: 5px;
-    display: none;
+  .midCol{
+    max-width: 60%;
   }
   .leftCol{
     max-width: 300px;
-    /* display: none; */
-    /* flex:1; */
+  }
+  main{
+    flex-wrap: wrap;
+  }
+  .opinion{
+    max-width: 100%;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 800px){
+  main{
+    flex-direction: column;
+  }
+
+  .leftCol{
+    max-width: 100%;
+    order: 2;
   }
   .midCol{
-    /* flex: 1; */
-    /* max-width: auto; */
-    max-width: 60%;
+    order: 1;
+    max-width: 100%;
   }
+  .opinion{
+    margin-left: 0;
+    max-width: 100%;
+    order: 3;
+  }
+
   .ul3{
-    /* display: flex; */
-    /* border: 1px solid black; */
     border-top: 2px solid black;
     border-bottom: 1px solid lightgray;
     justify-content: center;
@@ -307,9 +359,6 @@ main{
 }
 
 @media (max-width: 600px){
-  main{
-    flex-direction: column;
-  }
   .midCol{
     max-width: 100%;
     order: 1;

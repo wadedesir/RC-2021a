@@ -41,22 +41,33 @@ header {
   /* border: 1px solid black; */
   max-width: 100%;
   max-height: 160px;
-  vertical-align: top;
 }
 
+header div{
+  /* border: 1px solid black; */
+  display: flex;
+  height: 100%;
+}
 .logo{
   float: left;
   max-width: 10%;
+}
+.uppHeader{
+  padding-top: 1%;
 }
 .tip{
   /* border: 1px solid black; */
   font-size: 1.5rem;
   width: 20%;
-  margin-left: 5%;
+  color: gray;
+}
+.tip strong{
+  font-weight: bold;
+  color: green;
 }
 .mainNav{
   display: inline-block;
-  width: 90%;
+  width: 100%;
   /* border: 1px solid blue; */
   margin-top: 2%;
 }
@@ -72,24 +83,65 @@ header {
 .socials{
   /* border: 1px solid black; */
   font-size: 1.5rem;
-  float: right;
+  margin-left: 52%;
+}
+.socials ul{
+  /* border: 1px solid black; */
+  width: 150%;
+  height: 25px;
 }
 .socials li{
   display: inline;
+  color: gray;
+}
+.socials i{
+  width: 8%;
+  padding-top: 1%;
+  height: 25px;
+  text-align: center;
+  font-size: 1.6rem;
+  color: gray;
+  background-color: lightgray;
+  /* border: 1px solid black; */
+}
+.mainNav .btnli{
+  margin-left: 45%;
+  border: 1px solid red;
 }
 .btn{
-  margin-left: 45%;
+  height: 28px;
   background-color: black;
   color: white;
+  margin: 0;
 }
-header div{
+.mainNav .srch{
+  width: 300%;
+}
+.srch input{
+  vertical-align: top;
+  display: inline;
+  height: 28px;
+  margin: 0;
+  color: rgba(10, 158, 1, 1);
+}
+.mainNav .srch i{
+  border: 1px solid gray;
+  height: 28px;
+  width: 2%;
+  vertical-align: top;
+  padding-top: 0.5%;
+  text-align: center;
+  /* margin-left: */
+  font-size: 1.3rem;
+}
+.banner{
   /* border: 1px solid black; */
   display: inline-block;
   width: 100%;
   height: 35px;
   background-color: rgba(15, 74, 0, 1);
 }
-header div h3{
+.banner h3{
   display: inline-block;
   font-size: 2rem;
   font-weight: bold;
@@ -97,7 +149,7 @@ header div h3{
   margin-top: 0.5%;
   color: white;
 }
-header div p{
+.banner p{
   display: inline-block;
   font-size: 1.2rem;
   color: white;
@@ -113,7 +165,7 @@ h1{
   /* border: 1px solid black; */
   max-width: 60%;
   margin: 0;
-  width: auto;
+  /* width: auto; */
   font-size: 2.8rem;
 }
 
@@ -123,6 +175,7 @@ h1{
   display: flex;
   flex-direction:  column;
   max-height: 500px;
+  margin-top: 0.8%;
   /* border: 1px solid black; */
 }
 .report span{
@@ -132,6 +185,12 @@ h1{
 
 .stories{
   justify-content: space-evenly;
+  width: 25%;
+  margin-top: 1%;
+}
+.stories img{
+  width: 35%;
+  margin-left: 2.5%;
 }
 .stories a{
   color: black;
@@ -146,7 +205,11 @@ h1{
 .stories h3,
 .stories span{
   vertical-align: top;
-  /* border: 1px solid black; */
+  /* /* border: 1px solid black; */ */
+}
+.stories span{
+  margin-left: 1%;
+  color: gray;
 }
 .stories h3{
   font-size: 1.8rem;
@@ -159,15 +222,22 @@ main h2{
 }
 aside{
   flex 1;
-  width: 20%;
+  width: 25%;
   background-color: rgba(236, 236, 236, 1);
 }
-
 aside h2{
   margin-top: 4%;
   padding: 1%;
-  border-top: 4px solid gray;
-  border-bottom: 4px solid gray;
+  border-top: 4px solid lightgray;
+  padding-left: 15%;
+  border-bottom: 4px solid lightgray;
+}
+aside section{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  background-color: white;
+  height: 350px;
 }
 aside h3{
   display: block;
@@ -175,11 +245,14 @@ aside h3{
   text-align: center;
   background-color: rgba(15, 74, 0, 1);
   color: white;
-  height: 30px;
+  height: 40px;
+  padding-top: 2%;
 }
 .bigLi{
   border-bottom: 1px solid lightgray;
   height: 70px;
+  padding-top: 3%;
+  padding-left: 1%;
 }
 .bigLi h4{
   font-weight: bold;
@@ -187,11 +260,16 @@ aside h3{
 }
 .bigLi p{
   margin-top: 2%;
+  margin-left: 5%;
   font-size: 1.1rem;
   color: gray;
 }
 form > input{
   height: 35px;
+}
+.em,
+.sub{
+  margin-top: 3%;
 }
 .em{
   margin-left: 7%;
@@ -201,11 +279,16 @@ form > input{
   background-color:  rgba(10, 158, 1, 1);
   color: white;
   font-weight: bold;
+  border: none;
+  width: 30%;
 }
 aside section > h4{
   text-align: center;
-  margin-top: 3%;
+  margin-top: 5%;
   font-size: 2rem;
+}
+aside span{
+  color:  rgba(10, 158, 1, 1);
 }
 aside h4 a{
   color: gray;
@@ -217,76 +300,159 @@ aside strong{
 /* ADDITIONAL STYLES
 /*******************************************/
 
-@media (max-width: 1350px){
+@media (max-width: 1390px){
   .em{
     width: 40%;
     font-size: 0.8rem;
   }
-  .btn{
+  .socials{
+    margin-left: 46.2%;
+  }
+  .mainNav .btnli{
     margin-left: 38%;
   }
   aside h3{
     height: 50px;
   }
-  header div h3{
+  .banner h3{
     margin-left: 20%;
   }
 }
 @media (max-width: 1200px) {
+  h1{
+    max-width: 80%;
+  }
   .sub{
     width: 40%;
     font-size: 0.8rem;
   }
-  .btn{
-    margin-left: 32%;
+  .socials{
+    margin-left: 40.2%;
+  }
+  .mainNav .btnli{
+    margin-left: 30%;
+  }
+  .mainNav .srch i{
+    width: 3%;
   }
 }
 @media (max-width: 1070px) {
-  .btn{
-    margin-left: 22%;
+  .socials{
+    margin-left: 35%;
+  }
+  .mainNav .btnli{
+    margin-left: 20%;
+  }
+  .report{
+    width: 58%;
   }
   aside{
     display: none;
   }
-  header div h3{
+  .stories{
+    width: 40%;
+  }
+  .banner h3{
     margin-left: 15%;
   }
+
 }
 @media (max-width: 910px) {
-  header div h3{
+  .tip{
+    width: 30%;
+  }
+  .banner h3{
     margin-left: 4%;
   }
-  .btn{
-    margin-left: 10%;
+  .socials{
+    margin-left: 20%;
   }
+  .mainNav .btnli{
+    margin-left: 9%;
+  }
+
+  aside h3{
+    height: 50px;
+  }
+  .mainNav .srch i{
+    width: 4%;
+    padding-top: 1%;
+  }
+}
+@media (max-width: 810px) {
   main{
     flex-direction:  column;
   }
   .report{
     width: 100%;
+
+  }
+  .stories{
+    width: 65%;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   aside{
     display: block;
     width: 100%;
   }
-  aside h3{
-    height: 50px;
+  .tip{
+    width: 35%;
   }
-}
-@media (max-width: 800px) {
-  header{
-    background-color: gray;
-  }
-  .btn{
+  .banner{
     display: none;
   }
-  header div h3{
+  .socials{
+    margin-left: 15%;
+  }
+  .socials i{
+    width: 12%;
+  }
+  .mainNav .btnli{
+    margin-left: 16%;
+  }
+  .hidden{
+    display: none !important;
+  }
+
+  .banner h3{
     margin-left: 25%;
   }
-  header div p{
-    display: none;
+  .banner p{
+    /* display: none; */
   }
   .report h1{
     max-width: 100%;
+  }
+}
+
+@media (max-width: 650px){
+  .tip{
+    width: 42%;
+  }
+  .stories{
+    width: 100%;
+    margin-left: 0;
+  }
+  .socials{
+    margin-left: 7%;
+    width: 34%;
+  }
+  .mainNav .srch i{
+    width: 5.5%;
+    padding-top: 1.5%;
+  }
+  .mainNav .btnli{
+    display: none;
+    /* margin-left: 4%; */
+  }
+  .mainNav .srch{
+    margin-left: 18%;
+  }
+
+  .logo{
+    max-width: 15%;
+    margin-top: 1%;
   }
 }
