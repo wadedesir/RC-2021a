@@ -1,4 +1,4 @@
-# RC 2021a Code Repo
+# RC 2021a Repo
 
 ## What is this?
 This is the repo that stores the code that I write while I am attending the Resilient Coders 2020a Cohort. If you would like to find out more about Resilient Coders you can check out there website [here](http://resilientcoders.org).
