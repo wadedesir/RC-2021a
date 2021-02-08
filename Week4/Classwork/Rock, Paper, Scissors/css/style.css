@@ -35,29 +35,29 @@ body {
 header {
 
 }
+/* Centereed, increased size, and bolded main header */
 h1{
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
 }
-
+/* Sizing and formatting for output Data */
 h2{
   display: block;
   font-size: 2rem;
   text-align: center;
   padding-top: 3%;
 }
-
+/* Splitting into two mirrored halves to show player moves and opponent moves simultaneously */
 .playingField{
   display: flex;
-  /* border: 1px solid black; */
   flex-direction: column;
   align-items: center;
   margin-top: 5%;
 }
+/* div specific formatting */
 .opponent,
 .player{
-  /* border: 1px solid black; */
   width: 50%;
   height: 150px;
   display: flex;
@@ -77,6 +77,7 @@ h2{
 .opponent i{
   transform: rotate(-180deg);
 }
+/* Adding hover to make it look a little **extra fancy** */
 .player i:hover{
   color: gold;
 }
@@ -84,6 +85,7 @@ h2{
 .opponent .fa-hand-scissors{
   transform: rotate(0deg);
 }
+/* Big black and beautiful How to play just to make it a little more user friend;y */
 span{
   font-size: 2rem;
   vertical-align: top;

@@ -3,12 +3,15 @@ document.querySelector('#paper').addEventListener('click', function(){roll('pape
 document.querySelector('#scissors').addEventListener('click', function(){roll('scissors')})
 document.querySelector('#lizard').addEventListener('click', function(){roll('lizard')})
 document.querySelector('#spock').addEventListener('click', function(){roll('spock')})
-let finalBlow
+// ^^ Event listeners for each option, looking forward to using arrays for things like these in the future. Too lazy now
+let finalBlow //Holds the extra adjectives for when the player wins. Spices up game play
 let backup1
 let backup2
 let rst = false
+// ^^ These last 3 help in resetting the field
 
-function opponent(){
+
+function opponent(){ //Our dummy player. Just randomize values between 0-4 and sets them as options
   switch (Math.floor(Math.random() * 5)) {
     case 0:
       return 'rock'
@@ -28,7 +31,7 @@ function opponent(){
   }
 }
 
-function endPlay(hand, opponentHand, result){
+function endPlay(hand, opponentHand, result){ //This function outputs the text the player will see and also assigns colors to the hands
 
   document.querySelector(`#${hand}`).style.color = 'goldenrod'
   document.querySelector(`#o${opponentHand}`).style.color = 'firebrick'
@@ -46,15 +49,13 @@ function endPlay(hand, opponentHand, result){
 
 }
 
-function roll(hand){
+function roll(hand){ //Calculates the win situations and passes the info down to the endPlay() function
   let opponentHand = opponent()
-  let result
   reset()
 
   switch (hand) {
     case 'rock':
       finalBlow = 'crushes'
-
       if ((opponentHand === 'scissors') || (opponentHand === 'lizard')){
         endPlay(hand, opponentHand, 1)
       }
@@ -67,7 +68,7 @@ function roll(hand){
       break;
 
     case 'paper':
-      finalBlow = (opponentHand === 'rock') ? 'covers' : 'disproves'
+      finalBlow = (opponentHand === 'rock') ? 'covers' : 'disproves' //I was proud of this one nice and simple
       if ((opponentHand === 'rock') || (opponentHand === 'spock')){
         endPlay(hand, opponentHand, 1)
       }
@@ -123,8 +124,7 @@ function roll(hand){
 
 }
 
-function reset(){
-
+function reset(){ //Change all the hand colors to black at the beginning of each turn. Things look a little bit nasty otherwise
     document.querySelector(`#orock`).style.color = 'black'
     document.querySelector(`#opaper`).style.color = 'black'
     document.querySelector(`#oscissors`).style.color = 'black'
