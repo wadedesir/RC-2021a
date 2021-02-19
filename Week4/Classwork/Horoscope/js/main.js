@@ -14,8 +14,9 @@ const main = document.querySelector('#main')
 let lastHoroscope = document.querySelector('#main')
 let reset = false
 let lastParagraph
+// So many variables that it hurts to look at man :(
 
-function checkValues(){
+function checkValues(){ // First function thatt is called. Just does some verification and then calls the mains
   let day = document.querySelector('#day').value
 
   if (isNaN(day)){
@@ -29,20 +30,20 @@ function checkValues(){
   }
 }
 
-function horoscope(day){
+function horoscope(day){ //So many if statements but it works. actually really liked how it came out. Definitly can be better tho
   let month = document.querySelector('#month').value
 
-  if (reset === true){
+  if (reset === true){ //Makes sure things are removed before every new run.
     lastHoroscope.style.display = 'none'
     document.querySelector(lastParagraph).style.display = 'none'
   }
 
   if (((month === 'January') && (day >= 20)) || ((month === 'February') && (day <= 18))){
     document.querySelector('h1').innerText = 'Aquarius'
-    aquarius.style.display = 'flex'
-    lastHoroscope = aquarius
-    document.querySelector('.aquarius').style.display = 'flex'
-    lastParagraph = '.aquarius'
+    aquarius.style.display = 'flex' //Show s the image
+    lastHoroscope = aquarius //Sets it to lastHoroscope so that it can be toggle off later on
+    document.querySelector('.aquarius').style.display = 'flex' //Makes this paragraph visible
+    lastParagraph = '.aquarius' //Also stores the value for later use
   }
   else if (((month === 'February') && (day >= 19)) || ((month === 'March') && (day <= 19))){
     document.querySelector('h1').innerText = 'Pisces'
@@ -125,5 +126,4 @@ function horoscope(day){
   reset = true
 }
 
-document.querySelector('#check').addEventListener('click', checkValues)
-// document.querySelector('').style.display = 'none'
+document.querySelector('#check').addEventListener('click', checkValues) //gets the ball rolling

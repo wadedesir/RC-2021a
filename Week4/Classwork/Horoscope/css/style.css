@@ -15,7 +15,6 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: rgba(0, 49, 75, 1); */
 }
 
 h1{
@@ -33,24 +32,23 @@ body > input{
   border-radius: 5px;
 }
 
+/* Hover to make it match the main pic. Does this violate Separation of concerns? */
 body > input:hover{
   background-color: rgba(0, 49, 75, 0.9);
   color: white;
 }
 section{
-  /* border: 1px solid black; */
   width: 100%;
   display: flex;
   height: 400px;
 }
+/* Flexbox is AMAZING! */
 section div{
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 div{
-  /* border: 1px solid black; */
   width: 33.33%;
 }
 .leftDiv,
@@ -63,14 +61,19 @@ p{
 img{
   max-width: 100%;
 }
+
+/* I had to :( */
 #day{
   width: 25%;
 }
 
+/* Hide all of the pictures and paragraphs until their needed */
 .hidden{
   display: none;
 
 }
+
+/* This one needed a little bit more styling to fit the bill. I'm a gemini so idk how I feel about this random act of fate */
 .gemini{
   max-width: 200px;
 }
