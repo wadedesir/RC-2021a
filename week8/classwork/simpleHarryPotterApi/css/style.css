@@ -72,11 +72,12 @@ img{
   height: 64vh;
 }
 .tableWrapper tr{
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid black;
 }
 .tableBody tr{
   display: flex;
   justify-content: space-evenly;
+  border-bottom: 1px solid black;
 }
 .tableBody td{
   width: 100%;
